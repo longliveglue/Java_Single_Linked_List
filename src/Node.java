@@ -1,22 +1,36 @@
 public class Node {
 
-    Object value;
-    Node nextObj;
+    private int value;
+    private Node rightLink;
 
 
-    public Node(Object value){
+    public Node(int value) {
         this.value = value;
+        this.rightLink = null;
     }
 
-    public boolean setNext(Node nextObj){
+    public int getValue() {
+        return this.value;
+    }
 
-        if(nextObj != null) {
-            this.nextObj = nextObj;
-            System.out.printf("The next object has been sucessfully added");
+    public void setNext(Node nextNode) {
+        if (rightLink == null) {
+            this.rightLink = nextNode;
+        } else {
+            rightLink.setNext(nextNode);
         }
-        return false;
     }
 
+    public Node next() {
+        return rightLink;
+    }
 
+    public void printList() {
+        System.out.println(value);
+        if (rightLink != null) {
+            rightLink.printList();
+
+        }
+    }
 
 }
