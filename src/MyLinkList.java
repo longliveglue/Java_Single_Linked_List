@@ -2,9 +2,12 @@ public class MyLinkList {
 
     Node root;
     int size = 0;
+    Node currentItem;
+    Node nextItem;
 
     public MyLinkList (Node root){
         this.root = root;
+        this.currentItem = root;
         size++;
     }
 
@@ -18,5 +21,22 @@ public class MyLinkList {
         System.out.println("----- Last Item ------");
     }
 
+    public boolean hasNext(){
+        if(currentItem.hasNext()){
+            return true;
+        }
+        return false;
+    }
+
+   public Node next(){
+
+        if(currentItem != null) {
+            nextItem = currentItem.next();
+            currentItem = currentItem.next();
+            return nextItem;
+        }
+
+        return null;
+   }
 
 }
