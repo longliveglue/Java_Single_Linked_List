@@ -33,4 +33,10 @@ public class Node {
         }
     }
 
+    public boolean hasNext(){
+        if(rightLink != null){
+            return true;
+        }
+        return false;
+    }
 }
