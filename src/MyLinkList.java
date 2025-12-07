@@ -8,8 +8,6 @@ public class MyLinkList {
         size++;
     }
 
-
-
     public void addLink(Node newRightLink){
         root.setNext(newRightLink);
     }
