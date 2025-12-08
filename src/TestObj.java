@@ -7,7 +7,6 @@ public class TestObj {
         this.string = string;
     }
 
-
     public int getNumber(){
         return number;
 
@@ -26,7 +25,7 @@ public class TestObj {
         this.string = string;
         return true;
     }
-    
+
 
 
 }

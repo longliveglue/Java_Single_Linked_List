@@ -4,6 +4,7 @@ public class MyLinkList {
     int size = 0;
     Node currentItem;
     Node nextItem;
+    boolean firstNext = true;
 
     public MyLinkList (Node root){
         this.root = root;
@@ -29,6 +30,10 @@ public class MyLinkList {
     }
 
    public Node next(){
+        if(firstNext){
+            firstNext = false;
+            return currentItem;
+        }
 
         if(currentItem != null) {
             nextItem = currentItem.next();

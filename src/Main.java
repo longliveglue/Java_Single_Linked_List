@@ -41,6 +41,15 @@ public class Main {
 
         System.out.println(tObj1.getNumber() + " " + tObj1.getString());
 
+        nObj1 = objLinkList.next();
+        tObj1 = (TestObj) nObj1.getValue();
+
+        System.out.println(tObj1.getNumber() + " " + tObj1.getString());
+
+        nObj1 = objLinkList.next();
+        tObj1 = (TestObj) nObj1.getValue();
+
+        System.out.println(tObj1.getNumber() + " " + tObj1.getString());
 
     }
 
