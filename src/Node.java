@@ -1,15 +1,15 @@
 public class Node {
 
-    private int value;
+    private Object value;
     private Node rightLink;
 
 
-    public Node(int value) {
+    public Node(Object value) {
         this.value = value;
         this.rightLink = null;
     }
 
-    public int getValue() {
+    public Object getValue() {
         return this.value;
     }
 

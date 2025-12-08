@@ -39,4 +39,10 @@ public class MyLinkList {
         return null;
    }
 
+   public static Node createNode(int number, String string){
+        TestObj testy = new TestObj(number, string);
+        Node nodey = new Node(testy);
+        return nodey;
+   }
+
 }
